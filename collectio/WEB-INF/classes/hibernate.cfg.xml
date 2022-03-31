@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/customer_orderes</property>
+    <property name="hibernate.connection.username">KeerthanaDunde</property>
+    <property name="hibernate.connection.password">Keethu@04</property>
+    <property name="show_sql">true</property>
+    <property name="hbm2ddl.auto">create</property>
+	<mapping class="com.rest.dto.Department"/>
+    <mapping class="com.rest.dto.Employee"/>
+    <mapping class="com.rest.dto.UserInfo"/>   
+    <mapping class="com.rest.dto.TweetsDemo2"/> 
+  </session-factory>
+</hibernate-configuration>
